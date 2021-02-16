@@ -7,14 +7,10 @@ const api = require('./routes/api');
 const app = express();
 
 app.use(cors());
-
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(bodyParser.json());
 app.use('/api', api);
-app.use(express.static('static'));
-
-app.get('/', function(req, res){
-    res.send('Hello');
-})
+app.use(express.static('static/'));
 
 app.listen(PORT, function(){
     console.log('Listening on: ' + PORT);
