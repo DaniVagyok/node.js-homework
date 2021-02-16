@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inventory</title>
+    <title>Cutlery</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
@@ -14,7 +14,44 @@
 <body>
 
     <div class="container">
-        
+        <div class="row">
+            <div class="col-md-push-3 col-md-6 col-xs-12">
+                <h2>Bolt lista</h2>
+                <table class="table table-stripped">
+                    <thead>
+                    <tr>
+                        <th>Név</th>
+                        <th>Cím</th>
+                        <th>Összes evőeszköz</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Villák boltja</td>
+                        <td>Fő utca 1.</td>
+                        <td>8</td>
+                        <td class="text-right">
+                            <a href="item_edit.html" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caesh</td>
+                        <td>Vas utca 7.</td>
+                        <td>55</td>
+                        <td class="text-right">
+                            <a href="item_edit.html" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <a href="shop_add.html" class="btn btn-lg btn-primary">New item</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
